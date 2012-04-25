@@ -5,10 +5,17 @@
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <style>
+	body{
+		padding: 60px 60px 40px;
+	}
+  </style>
 </head>
 <body>
-
-<%= yield %>
-
+<div class="row-fluid">
+	<div class="span12">
+	<%= yield %>
+	</div>
+</div>
 </body>
 </html>
