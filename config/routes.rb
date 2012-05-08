@@ -1,4 +1,8 @@
 Blig::Application.routes.draw do
+  resources :microposts
+
+  resources :users
+
   resources :posts do
 	resources :comments
   end
